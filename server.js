@@ -25,6 +25,8 @@ app.get("/restaurants", (req, res) => {
     // call the `.serialize` instance method we've created in
     // models.js in order to only expose the data we want the API return.    
     .then(restaurants => {
+
+      console.log(restaurants.length)
       res.json({
         restaurants: restaurants.map(restaurant => restaurant.serialize())
       });
@@ -122,7 +124,7 @@ let server;
 function runServer(databaseUrl, port = PORT) {
   return new Promise((resolve, reject) => {
     mongoose.connect(
-      databaseUrl, {dbName: 'restuarants-app'},
+      databaseUrl, 
       err => {
         if (err) {
           return reject(err);
