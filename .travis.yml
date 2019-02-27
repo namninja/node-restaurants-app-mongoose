@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: BWuVv0+SzYAW9+9KEQhPepRbrqyKVNaq1KHbN8IviGVBgjElmfqz+rvq0cjRHP5Z1Rm4AupKhSVDyupP9+uE6rUj3lIYXt/76v5dZ1isJGcIkH5s18TJUG9H0Sgo1UCU1U5sAcMXQa31EwRm341TZlJ1Q4b+pf0V0slVA5LlIRbDRqn3MM+9XqnKSgsnfqY5/NfsrHG1sZCs5+wWUIbd4TWYm5s++c1YJFPFWkSNvfZRqdgXMvC3Lb8PsAKUu62NVlsvZpc+2+JGq39JOcGIvlC4ZS7d4zLGQ2j45ImmFl73YqD+Zrs+Pt85XhsV0p1gW5p6YvGg4c57ejOkSWPMsMTX131c8mkSpWoeSBMOiO5b5bLwOL7ocWCCgw4acVjXWFsvURH2OxTdQl6uYxFhGd50C8biRl8VpZ/tkVxVWUAQo4CYOR2BHAc4JCVuWWZuv1W/F3IOiS0v9kEzZfY7/QAFy87Qq3gTBDtvRQLzaArR/LAgqtRnHbD1zjyY/Vd8gthWJ+/YNQYDPlHfHXzn87PPKSi3SV3jSUa2uFgk/ePgmoc7vGKCpX+sSJgW0lOwWeccNH4UXuP2kOxiff989bW5Ml29GPI8SbC/xjnFP3JqBW4o4VH/boUvjbJ1K7RjFK6yFx1GcnvrNikaIlNG6o8KUF2rfHQyjUz18M0RR9Y=
+  app: intense-temple-20361
+  on:
+    repo: namninja/node-restaurants-app-mongoose
