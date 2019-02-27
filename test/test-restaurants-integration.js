@@ -123,6 +123,7 @@ describe('Restaurants API resource', function() {
         .then(function(_res) {
           // so subsequent .then blocks can access response object
           res = _res;
+          console.log(res)
           expect(res).to.have.status(200);
           // otherwise our db seeding didn't work
           expect(res.body.restaurants).to.have.lengthOf.at.least(1);
